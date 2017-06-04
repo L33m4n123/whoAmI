@@ -4,7 +4,7 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.all("*", (req, res) => {
-	console.log("res._headers >>>>>>>" + JSON.stringify(resp._headers));
+	console.log("res._headers >>>>>>>" + JSON.stringify(res._headers));
 	res.send("...");
 });
 
